@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crafted teams for hard problems</title>
+    <meta name="description" content="A clean, static landing page inspired by modern product consultancies. We help teams ship better software through engineering, product, and design." />
+    <link rel="preload" href="css/mwl.css" as="style" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/mwl.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Home">made with care</a>
+        <nav class="site-nav" aria-label="Primary">
+          <details class="nav-menu">
+            <summary aria-label="Toggle navigation" class="nav-toggle">Menu</summary>
+            <ul class="nav-list">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#culture">Culture</a></li>
+              <li><a href="#contact" class="btn btn--sm">Contact</a></li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-bg" role="img" aria-label="Abstract gradient background"></div>
+        <div class="container hero-inner">
+          <h1 id="hero-title">We build resilient product teams</h1>
+          <p class="lead">Senior engineers, product managers, and designers who embed with you to ship value, reduce risk, and level up your people.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Work with us</a>
+            <a class="btn btn--ghost" href="#work">See our work</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title" class="section-title">What we do</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Engineering</h3>
+              <p>Hands-on, pragmatic engineering leadership. From architecture to delivery, we help you build maintainable software.</p>
+            </article>
+            <article class="card">
+              <h3>Product</h3>
+              <p>Outcome-driven product management. Validate ideas, prioritize impact, and align teams around measurable goals.</p>
+            </article>
+            <article class="card">
+              <h3>Design</h3>
+              <p>Accessible, user-centered design systems. We craft interfaces that are clear, fast, and beautiful.</p>
+            </article>
+            <article class="card">
+              <h3>Delivery</h3>
+              <p>Lean processes and coaching. Improve flow, reduce cycle time, and ship with confidence.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <h2 id="work-title" class="section-title">Selected work</h2>
+          <div class="grid">
+            <figure class="tile">
+              <div class="tile-media" role="img" aria-label="Case study placeholder with gradient"></div>
+              <figcaption>
+                <h3>Scaling a fintech platform</h3>
+                <p>Stability and performance for millions of users across regions.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile">
+              <div class="tile-media" role="img" aria-label="Case study placeholder with gradient"></div>
+              <figcaption>
+                <h3>Zero-to-one health app</h3>
+                <p>From hypothesis to launch in twelve weeks.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile">
+              <div class="tile-media" role="img" aria-label="Case study placeholder with gradient"></div>
+              <figcaption>
+                <h3>Legacy to cloud</h3>
+                <p>Replatforming a critical system without downtime.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile">
+              <div class="tile-media" role="img" aria-label="Case study placeholder with gradient"></div>
+              <figcaption>
+                <h3>Design system</h3>
+                <p>Consistent, accessible UI at scale for a growing team.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="culture" aria-labelledby="culture-title">
+        <div class="container">
+          <h2 id="culture-title" class="section-title">Ideas & culture</h2>
+          <div class="posts">
+            <article class="post">
+              <h3><a href="#">Strong teams ship boring software</a></h3>
+              <p>Why reliability beats novelty when customers depend on you.</p>
+            </article>
+            <article class="post">
+              <h3><a href="#">Measure what matters (to users)</a></h3>
+              <p>Moving from output to outcome with lightweight metrics.</p>
+            </article>
+            <article class="post">
+              <h3><a href="#">Designing for speed and clarity</a></h3>
+              <p>Interface patterns that reduce friction and build trust.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section--alt" id="contact" aria-labelledby="contact-title">
+        <div class="container cta-inner">
+          <h2 id="contact-title">Ready to talk?</h2>
+          <p>Tell us about your challenges. We’ll share how we can help and what it’s like to work together.</p>
+          <a class="btn" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> made with care</p>
+        <nav aria-label="Secondary">
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <noscript>JavaScript is disabled. The site works without it.</noscript>
+      <script>
+        // Small enhancement: dynamic year only, no interactivity required
+        (function(){
+          var y=document.getElementById('year');
+          if(y){ y.textContent = new Date().getFullYear(); }
+        })();
+      </script>
+    </footer>
+  </body>
+</html>
